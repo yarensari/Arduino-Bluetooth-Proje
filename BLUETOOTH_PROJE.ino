@@ -74,7 +74,7 @@ void loop() {
   if (alarmDurum == true) { // alarm açık
     lcd.setCursor(0, 1);
     lcd.print("Alarm acik         ");
-    if (sicaklikDeger >= 25) { // tehlike var
+    if (sicaklikDeger >= 45) { // tehlike var
       digitalWrite(kirmiziLedPin, HIGH);
       digitalWrite(alarm, HIGH);
       digitalWrite(yesilLedPin, LOW);
